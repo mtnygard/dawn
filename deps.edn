@@ -3,9 +3,9 @@
         com.cognitect/fern {:local/root "fern"}
         com.datomic/datomic-pro {:mvn/version "0.9.5930"}}
  :aliases {:dev {:extra-deps {frenpl {:local/root "frenpl"}}
-                 :extra-paths ["test"]
+                 :extra-paths ["dawn/test"]
                  :main-opts ["-m" "frenpl"]}
-           :test {:extra-paths ["test"]
+           :test {:extra-paths ["dawn/test"]
                   :extra-deps {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
                                                           :sha "209b64504cb3bd3b99ecfec7937b358a879f55c1"}}
                   :main-opts ["-m" "cognitect.test-runner"]}}}
