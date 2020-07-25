@@ -1,7 +1,6 @@
 {
         "name": "Clojure",
         "image": "clojure:openjdk-15-tools-deps-alpine",
-        "runArgs": ["--entrypoint", "clojure"],
 
         // Set *default* container specific settings.json values on container create.
         "settings": {
