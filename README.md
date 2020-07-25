@@ -4,7 +4,8 @@ Fast start for a Clojure + Pedestal + Vase + Fern project
 
 Fork this to your project, then fire up a Codespace to get started.
 
-You'll probably want to change "dawn" to your project's name. Be sure to make the same change in `deps.edn`.
+You'll probably want to change "dawn" to your project's name. Be sure to make
+the same change in `deps.edn`.
 
 ## Included in this starter
 
@@ -19,3 +20,9 @@ You'll probably want to change "dawn" to your project's name. Be sure to make th
 
 - :dev - Start a friendly REPL
 - :test - Run all tests
+
+## Fetching Datomic Client Jar
+
+You will need to set up `~/.clojure/deps.edn` and `~/.m2/settings.xml` according
+to the instructions at [my.datomic.com](https://my.datomic.com) in order to
+fetch the Datomic Pro jar file from `repo.datomic.com`.
