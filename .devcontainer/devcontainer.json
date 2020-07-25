@@ -1,6 +1,6 @@
 {
-        "name": "Java 14",
-        "dockerFile": "Dockerfile",
+        "name": "Clojure",
+        "image": "clojure:openjdk-15-tools-deps-alpine"
 
         // Set *default* container specific settings.json values on container create.
         "settings": {
@@ -11,7 +11,8 @@
 
         // Add the IDs of extensions you want installed when the container is created.
         "extensions": [
-                "vscjava.vscode-java-pack"
+                "vscjava.vscode-java-pack",
+                "betterthantomorrow.calva"
         ]
 
         // Use 'forwardPorts' to make a list of ports inside the container available locally.
