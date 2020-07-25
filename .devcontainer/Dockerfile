@@ -17,7 +17,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
 RUN yum install -y git openssh-clients less net-tools which curl procps unzip 
 
 # Install Clojure
-RUN yum install -y rlwrap
+RUN yum install -y readline
 ENV CLOJURE_VERSION 1.10.1.561
 RUN curl -s https://download.clojure.org/install/linux-install-${CLOJURE_VERSION}.sh | bash 
 
