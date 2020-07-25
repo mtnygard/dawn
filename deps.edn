@@ -1,0 +1,12 @@
+{:paths ["src"]
+ :deps  {com.datomic/datomic-pro  {:mvn/version "0.9.5930"}
+         com.datomic/client-cloud {:mvn/version "0.8.78"}
+
+         io.rkn/conformity        {:mvn/version "0.5.1"}
+
+         ;; Pedestal
+         io.pedestal/pedestal.service {:mvn/version "0.5.5"}
+         io.pedestal/pedestal.jetty   {:mvn/version "0.5.5"}
+
+         com.cognitect/fern {:mvn/version "0.1.6"}}
+ :aliases {:repl {:extra-paths ["test" "test/resources"]}}}
