@@ -26,3 +26,7 @@ the same change in `deps.edn`.
 You will need to set up `~/.clojure/deps.edn` and `~/.m2/settings.xml` according
 to the instructions at [my.datomic.com](https://my.datomic.com) in order to
 fetch the Datomic Pro jar file from `repo.datomic.com`.
+
+Codespaces users will want to look at [setting up personal
+dotfiles](https://docs.github.com/en/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account)
+to make that easier.
