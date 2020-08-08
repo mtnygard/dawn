@@ -5,7 +5,7 @@ Fast start for a Clojure + Pedestal + Vase + Fern project
 Fork this to your project, then fire up a Codespace to get started.
 
 You'll probably want to change "dawn" to your project's name. Be sure to make
-the same change in `deps.edn`.
+the same change in `deps.edn`, `shadow-cljs.edn` and the various folder names.
 
 ## Included in this starter
 
@@ -15,6 +15,7 @@ the same change in `deps.edn`.
 - [Datomic Pro](https://www.datomic.com) client
 - [Test Runner](https://github.com/cognitect-labs/test-runner)
 - [Friendly Repl](https://gitlab.com/mtnygard/frenpl)
+- [Shadow-cljs Browser Quickstart](https://github.com/shadow-cljs/quickstart-browser)
 
 ## Aliases
 

@@ -1,2 +1,10 @@
-.cpcache
-.nrepl-port
+/.cpcache
+/.calva
+/.shadow-cljs
+/public/js
+/node_modules
+/target
+/yarn.lock
+/package-lock.json
+/.shadow-cljs
+/.nrepl-port
