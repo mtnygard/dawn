@@ -19,8 +19,14 @@ the same change in `deps.edn`, `shadow-cljs.edn` and the various folder names.
 
 ## Aliases
 
+### Clojure
+
 - :dev - Start a friendly REPL
 - :test - Run all tests
+
+### Shadow-CLJS
+
+- :app - Build the main application, expose it as http://localhost:8020
 
 ## Fetching Datomic Client Jar
 
