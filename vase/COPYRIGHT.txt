@@ -1,1 +1,2 @@
-All data and code in this repository is copyright © 2014-2017 Cognitect, Inc.
+Portions copyright © 2014-2017 Cognitect, Inc.
+Additional work copyright 2020-2021 Michael Nygard

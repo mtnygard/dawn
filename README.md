@@ -7,7 +7,7 @@ Fork this to your project, then fire up a Codespace to get started.
 You'll probably want to change "dawn" to your project's name. Be sure to make
 the same change in `deps.edn`, `shadow-cljs.edn` and the various folder names.
 
-## Vendored in this starter
+## Included in this starter
 
 - [Vase](https://github.com/cognitect-labs/vase)
 - [Fern](https://github.com/cognitect-labs/fern)
@@ -16,6 +16,12 @@ the same change in `deps.edn`, `shadow-cljs.edn` and the various folder names.
 - [Test Runner](https://github.com/cognitect-labs/test-runner)
 - [Friendly Repl](https://gitlab.com/mtnygard/frenpl)
 - [Shadow-cljs Browser Quickstart](https://github.com/shadow-cljs/quickstart-browser)
+
+### Embedded Components
+
+Vase embedded here is a derivative work originally created as
+[Vase](https://github.com/cognitect-labs/vase). Vase was licensed
+under EPL v1.0. This fork is licensed under [EPL-2.0](https://opensource.org/licenses/EPL-2.0)
 
 ## Starting a REPL with VS Code or Codespaces
 

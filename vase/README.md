@@ -215,27 +215,7 @@ hand-written Pedestal routes by concatenating the input to
 * [Migrating EDN to Fern](./docs/migrating_edn_to_fern.md) - Tooling
   to help port your descriptors
 
-## Contributing
-
-Contributing guidelines for Vase are the same as
-[Pedestal](https://github.com/pedestal/pedestal/blob/master/CONTRIBUTING.md).
-
-For code contribution, you'll need a signed [Cognitect Contributor
-Agreement](https://secure.echosign.com/public/hostedForm?formid=8JU33Z7A7JX84U).
-For small changes and doc updates, no CA is required.
-
-If you're proposing a significant change, please open an Issue to
-discuss the design of the change before submitting a Pull Request.
-
-## Support
-
-Don't hesitate to reach out if you run into issues or have questions!
-The Vase community can be found in the
-the [pedestal-users](https://groups.google.com/d/forum/pedestal-users)
-mailing list or
-the [#pedestal](https://clojurians.slack.com/messages/pedestal/) slack
-channel.
-
 ## Copyright
 
 Copyright © 2015-2018 Cognitect, Inc. All rights reserved.
+Additional material © 2020-2021 Michael Nygard.
