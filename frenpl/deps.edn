@@ -1,7 +1,7 @@
 {:paths ["." "src" "test"]
- :deps  {expound                    {:mvn/version "0.7.2"}
-         clansi                     {:mvn/version "1.0.0"}
-         cider/cider-nrepl          {:mvn/version "0.25.3-SNAPSHOT"}
-         nrepl/nrepl                {:mvn/version "0.5.3"}
-         refactor-nrepl             {:mvn/version "2.5.0"}
-         com.bhauman/rebel-readline {:mvn/version "0.1.4"}}}
+ :deps  {expound/expound               {:mvn/version "0.7.2"}
+         clansi/clansi                 {:mvn/version "1.0.0"}
+         cider/cider-nrepl             {:mvn/version "0.25.3-SNAPSHOT"}
+         nrepl/nrepl                   {:mvn/version "0.5.3"}
+         refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0"}
+         com.bhauman/rebel-readline    {:mvn/version "0.1.4"}}}
