@@ -4,10 +4,10 @@
             [clojure.string :as cstr]
             [cheshire.core :as json]
             [cognitect.transit :as transit])
-  (:import (java.io ByteArrayInputStream
-                    FileInputStream
-                    File)
-           (java.util Base64)))
+  (:import [java.io ByteArrayInputStream
+            FileInputStream
+            File]
+           [java.util Base64]))
 
 (defn map-vals
   [f m]
