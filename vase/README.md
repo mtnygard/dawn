@@ -25,35 +25,6 @@ This release aims to make Vase much easier for common cases:
    support for other external integrations. Instead of `vase/query`,
    for example, you'll now use `vase.datomic/query`.
 
-## Releases and Dependency Information
-
-If you would like to use the latest developments in Vase, you will need to
-clone this repository and install it locally:
-
-```
-git clone https://github.com/cognitect-labs/vase
-cd vase
-lein install
-```
-
-Stable versions are currently deployed to the Clojars repository.
-
-[Leiningen](https://github.com/technomancy/leiningen) dependency information:
-
-```clj
- [com.cognitect/pedestal.vase "0.9.3"]
-```
-
-[Maven](http://maven.apache.org/) dependency information:
-
-```xml
-<dependency>
-  <groupId>com.cognitect</groupId>
-  <artifactId>pedestal.vase</artifactId>
-  <version>0.9.3</version>
-</dependency>
-```
-
 ## Before you get started
 
 Vase is built on top of [Pedestal](http://pedestal.io/)
