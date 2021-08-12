@@ -26,12 +26,4 @@
                (:! clojure.lang.ExceptionInfo ei (fe/print-other-exception ei))
                :filename)]
     (when (and file (not= ::try/exit file))
-      (try-> file
-             fern/load
-             (:! java.io.FileNotFoundException fnfe (fe/print-error-message (str "File not found: " (pr-str (.getMessage fnfe)))))
-
-             fern/prepare-service
-             (:! Throwable t (fe/print-evaluation-exception t file))
-
-             a/start-service
-             (:! Throwable t (fe/print-other-exception t file))))))
+      (fern/server file))))
