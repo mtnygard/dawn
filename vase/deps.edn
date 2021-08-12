@@ -5,7 +5,7 @@
            ;; Pedestal
            io.pedestal/pedestal.service {:mvn/version "0.5.5"}
            io.pedestal/pedestal.jetty   {:mvn/version "0.5.5"}
-           com.cognitect/fern           {:mvn/version "0.1.6"}}
+           com.cognitect/fern           {:local/root "../fern"}}
  :aliases {:repl {:extra-paths ["test" "test/resources"]}
            :test {:extra-paths ["test"]
                   :extra-deps  {io.github.cognitect-labs/test-runner
