@@ -68,6 +68,20 @@ To get a CLJS REPL:
 Your app will be on `http://localhost:8020` and a Shadow CLJS
 dashboard (for monitoring builds) will be on `http://localhost:9630`
 
+## Staying Sane
+
+If you want to merge upstream changes into your application in the
+future, then it's best not to change the code under `framework/`.
+
+If you want to include other repositories as submodules, use the
+`vendor/` directory and add a reference in `deps.edn`.
+
+Of course, ordinary dependencies work just fine too.
+
+`dawn/src` is the intended place for your application's code. You'll
+want to rename `dawn` to your app's name. Or just rename it to
+`app`... either way is fine.
+
 ## Aliases
 
 ### Clojure

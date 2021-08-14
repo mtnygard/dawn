@@ -1,8 +1,8 @@
 {:paths   ["dawn/src/clj"]
- :deps    {com.cognitect/vase      {:local/root "vase"}
-           com.cognitect/fern      {:local/root "fern"}
+ :deps    {com.cognitect/vase      {:local/root "framework/vase"}
+           com.cognitect/fern      {:local/root "framework/fern"}
            com.datomic/datomic-pro {:mvn/version "0.9.5930"}}
- :aliases {:dev  {:extra-deps  {frenpl/frenpl {:local/root "frenpl"}}
+ :aliases {:dev  {:extra-deps  {frenpl/frenpl {:local/root "framework/frenpl"}}
                   :extra-paths ["dawn/test"]
                   :main-opts   ["-m" "frenpl"]}
            :test {:extra-paths ["dawn/test"]
