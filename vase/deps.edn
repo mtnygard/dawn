@@ -7,7 +7,7 @@
            io.pedestal/pedestal.jetty   {:mvn/version "0.5.5"}
            com.cognitect/fern           {:local/root "../fern"}}
  :aliases {:repl {:extra-paths ["test" "test/resources"]}
-           :test {:extra-paths ["test"]
+           :test {:extra-paths ["test" "test/resources"]
                   :extra-deps  {io.github.cognitect-labs/test-runner
                                 {:git/url "https://github.com/cognitect-labs/test-runner.git"
                                  :sha     "8c3f22363d63715de4087b038d79ae0de36a3263"}}
