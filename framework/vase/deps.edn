@@ -3,8 +3,8 @@
            com.datomic/client-cloud     {:mvn/version "0.8.78"}
            io.rkn/conformity            {:mvn/version "0.5.1"}
            ;; Pedestal
-           io.pedestal/pedestal.service {:mvn/version "0.5.5"}
-           io.pedestal/pedestal.jetty   {:mvn/version "0.5.5"}
+           io.pedestal/pedestal.service {:mvn/version "0.5.9"}
+           io.pedestal/pedestal.jetty   {:mvn/version "0.5.9"}
            com.cognitect/fern           {:local/root "../fern"}}
  :aliases {:repl {:extra-paths ["test" "test/resources"]}
            :test {:extra-paths ["test" "test/resources"]
