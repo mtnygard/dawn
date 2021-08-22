@@ -73,3 +73,31 @@ from data. When starting up a service, Vase2 will generate, then eval,
 the code that will be run at request time. That adds complexity for
 extension authors, so making this easy to understand and still fast is
 a key design objective.
+
+## Initialization
+
+Vase2 needs to consider two phases: initialization and request
+time. Both can be addressed with interceptors, if we think about
+different kinds of [Context
+map](http://pedestal.io/reference/context-map).
+
+## Composability
+
+Interceptors chain, but do not compose. Route tables can be
+concatenated, but also do not compose. How can we go about building
+"bigger pieces" by composing smaller pieces?
+
+For example, REST style resources over a database would comprise four
+or five routes with similar names (derived from the resource name),
+where each route invokes actions to manipulate a database. It seems
+obvious that we should have a way to create a "resource" construct
+that would take a resource name, API schema, and DB schema and expand
+into the discrete routes and interceptors needed.
+
+Such compositionality would allow us to support
+[Swagger](https://swagger.io/) API definitions.
+
+Fern literals can provide this. But that's less like composing big
+blocks out of small blocks, and more like throwing code at the
+problem. Perhaps Fern could be extended to support literals that emit
+other literals.

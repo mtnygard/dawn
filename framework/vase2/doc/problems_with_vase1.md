@@ -37,3 +37,7 @@ Challenges in [Vase 1](https://github.com/cognitect-labs/vase):
 
 - There is no way to support "configuration overrides" as one would
   need for e.g., different credentials in different environments.
+
+- It is awkward to pass results from one action to another.
+
+- It is awkward to run multiple queries or multiple transactions.
