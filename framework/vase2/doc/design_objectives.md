@@ -1,5 +1,17 @@
 # Design Objectives
 
+## Principles
+
+1. Simple below, easy above.
+2. Prefer fewer, composable mechanisms.
+3. Prefer adding an orthogonal mechanism over adding complexity in a mechanism.
+4. Create simplicity by removing special cases.
+5. Data is the common language.
+6. When in conflict, prefer simplicity over reuse.
+7. Composition is the preferred means of reuse.
+8. Expand the volume of pure functional code.
+9.  Reduce the surface area of imperative, side-effecting code.
+
 ## Be production-ready
 
 Vase2 services should be suitable for use in a production
