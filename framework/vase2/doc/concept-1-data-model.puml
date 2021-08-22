@@ -1,0 +1,43 @@
+@startuml concept-1-data-model.png
+class "Service" as svc
+class "Interceptor" as intc
+
+svc *--> "1..*" Responder
+Responder *--> "*" intc : "on-startup"
+Responder *--> "*" intc : "on-shutdown"
+
+@enduml
+
+@startuml concept-1-data-model-with-pedestal.png
+class "Service" as svc
+class "Interceptor" as intc
+
+svc *--> "1..*" Responder
+Responder *--> "*" intc : "on-startup"
+Responder *--> "*" intc : "on-shutdown"
+
+class "Pedestal Responder" as presp extends Responder
+class "Pedestal Route" as rt
+
+presp *--> "*" rt
+
+rt -> "1..*" intc : "handlers"
+
+@enduml
+
+@startuml concept-1-data-model-with-datomic.png
+class "Service" as svc
+class "Interceptor" as intc
+
+svc *--> "1..*" Responder
+Responder *--> "*" intc : "on-startup"
+Responder *--> "*" intc : "on-shutdown"
+
+class "Datomic Connector" as dsresp extends Responder
+
+dsresp *--> "*" Transaction
+
+class "Attribute" extends Transaction
+
+@enduml
+
