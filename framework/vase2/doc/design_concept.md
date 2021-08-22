@@ -1,4 +1,9 @@
-## Concept 1
+# Design concepts
+
+Pursuant to the design objectives, these concepts should be used to their
+fullest, compose orthogonally, and be free of special cases.
+
+## Concept 1: Everything is an Interceptor
 
 Premises: 
 
@@ -271,3 +276,41 @@ Or it could use just some of them
 ```
 
 (This exists today in Vase1, but is not really documented.)
+
+## Concept 2: Compositionality
+
+... unclear how to resolve at the moment ...
+
+This is where I need to figure out how to build up "build chunks" of API from
+repeatable pieces. Rather than just addressing one or two API types, I'd like to
+find a more general mechanism that allows composites of small pieces into large
+pieces.
+
+Option 1: add "real language" features to the Fern layer. Macros and functions
+would both fit the bill. This quickly runs into [Greenspun's Tenth
+Rule](https://en.wikipedia.org/wiki/Greenspun%27s_tenth_rule) as the Fern format
+morphs into another programming language, except poorly specified and
+less capable than Clojure itself.
+
+Option 2: Declare "Clojure is the extension language" and require that functions
+to build the big chunks of API are implemented in Clojure as `fern/lit`
+constructs. These should then emit the real data to be used (routes,
+interceptors, etc.) rather than emitting more Fern.
+
+Option 3: Add a templating language over the top of Fern. Macro processing would
+be done before the Fern evaluation happens. Macro processing is long-standing
+solution, with equally long-standing problems. It also violates the principle of
+parsimony.
+
+Option 4: Give up on general compositionality and embrace a handful of specific
+API types. Code them as their own extensions and worry not about cleanly
+composing multiple extensions.
+
+Option 5: One time code generation. Forget about homoiconicity. Take a Swagger
+JSON file as input and emit a Fern file (or fragment of a Fern file) with fully
+configured routes. Do this at build time rather than startup time.
+
+As I write this, I have realized a previously hidden requirement: if we want to
+use API standards like Swagger, then the tools in the Swagger ecosystem should
+be available to us as well. That includes the well-known SwaggerUI. It also
+includes linters and visualizers.

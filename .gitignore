@@ -10,3 +10,5 @@
 /.nrepl-port
 .rebel_readline_history
 .lsp
+
+framework/fern/.calva/output-window/

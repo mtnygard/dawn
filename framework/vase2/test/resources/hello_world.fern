@@ -1,0 +1,16 @@
+;;; The most basic HTTP server. Answers on http://localhost:8080/v1/hello
+
+{vase2/service {:responders [@pedestal]}
+
+ pedestal      (pedestal/server {:http-options @http-options
+                                 :apis [@friendly-api]})
+
+ http-options  {:io.pedestal.http/port      8080
+                :io.pedestal.http/join?     false
+                :io.pedestal.http/file-path "/public"}
+
+ friendly-api  (pedestal/api {:base "/v1"
+                              :routes #{["/hello" :get @say-hello]}})
+
+ ;; pedestal.http/respond assumes status 200 unless otherwise stated.
+ say-hello     (pedestal.http/respond {:body "Hello, world!"})}
